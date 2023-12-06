@@ -1,0 +1,156 @@
+.navbar-dark.bg-very-dark {
+    background-color: #000000; 
+    min-height: 70px;
+}
+
+.navbar-brand img {
+    width: 120px; /* Ajusta el ancho de la imagen */
+    height: 100px; /* Ajusta la altura de la imagen */
+}
+
+.navbar-brand {
+    position: relative;
+    left: 10px; /* Ajusta la distancia desde la izquierda*/
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #231c2c;
+}
+
+header {
+    background: linear-gradient(to bottom, #000000,#231c2c); /* Fondo degradado más oscuro de negro a gris */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+    margin-bottom: 150px; /* Ajusta el margen inferior */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para las reseñas */
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.review {
+    background-color: #313130;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 0px rgba(56, 56, 56, 1.1); /* Sombreado suave al borde */
+    width: 300px;
+    color: white;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.review-text {
+    margin-top: 10px;
+}
+
+/* Estilos para el formulario de reseñas */
+form {
+    background-color: #313130;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 0px rgba(56, 56, 56, 1.1); /* Sombreado suave al borde */
+    max-width: 400px;
+    margin: 20px auto;
+    color: white ;
+}
+
+form label,
+form textarea,
+form input[type="text"],
+form button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el footer */
+#footer {
+    background: linear-gradient(to bottom,#231c2c, #000000); 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer .icons,
+#footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer ul li {
+    margin: 0 10px;
+}
+
+#footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media Queries para Responsividad */
+@media screen and (max-width: 768px) {
+    #banner {
+        height: auto;
+    }
+
+    .features-row section {
+        width: 100%;
+    }
+}

@@ -1,0 +1,289 @@
+    body {
+        overflow-x: hidden;
+    }
+
+        .navbar-dark.bg-very-dark {
+            background-color: #000000; 
+            min-height: 70px;
+        }
+
+        .navbar-brand img {
+            width: 120px; /* Ajusta el ancho de la imagen */
+            height: 100px; /* Ajusta la altura de la imagen */
+        }
+        
+        .navbar-brand {
+            position: relative;
+            left: 10px; /* Ajusta la distancia desde la izquierda */
+        }
+        
+        /* Banner */
+        #banner {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh; /* Cambiado a min-height */
+            background: linear-gradient(to bottom, #000000,#231c2c); /* Fondo degradado más oscuro de negro a gris */
+            color: white; /* Color de texto blanco */
+            padding: 20px;
+            box-sizing: border-box;
+            backdrop-filter: blur(8px); /* Agrega desenfoque al fondo */
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+            /* Contenedor para la zona de hover */
+            #banner .hover-area {
+                transition: font-size 0.3s ease, color 0.3s ease; /* Transición para el cambio de tamaño de fuente y color */
+            }
+
+            #banner .hover-area:hover h2 {
+                font-size: 2.4em; /* Ajusta el tamaño de fuente al pasar el mouse */
+                
+            }
+            #banner .hover-area:hover {
+                font-size: 1.2em; /* Ajusta el tamaño de fuente al pasar el mouse */
+                
+            }
+
+        /* Estilos para los botones en la sección de banner */
+        #banner .actions.special {
+            margin-top: 15px; /* Ajusta el margen superior según tu preferencia */
+            display: flex;
+            justify-content: center; /* Centra los elementos horizontalmente */
+        }
+
+            #banner .actions.special a.button {
+            margin: 5 10px; /* Ajusta el margen horizontal para ambos botones */
+            color: white; /* Color de texto blanco por defecto */
+            border-radius: 10px; /* Bordes redondos */
+            padding: 10px 30px; /* Ajusta el relleno según tu preferencia */    
+            
+        }
+
+        #banner .actions.special a.button:hover {
+            color: #abefea;
+        }
+
+        #banner .actions.special a.button.primary {
+            color: black; /* Color de texto negro para el botón "Sign Up" */
+            border: 2px solid ; /* Contorno negro para el botón "Sign Up" */
+            background-color: #abefea; /* Color del fondo para el botón "Sign UP" */ 
+        } 
+
+        #banner .actions.special a.button.primary:hover {
+            background-color: white; /* Cambia el fondo a blanco al pasar el mouse */
+        
+        }
+        
+    
+
+        /*caja 1*/
+            .box.special {
+                text-align: center;
+                background-color: #231c2c
+            }
+            
+            .box.special h2 {
+                font-size: 2em;
+                line-height: 1.5em;
+                color: white;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+            }
+            
+        
+    /* Estilos para las cajitas */
+    .features {
+        text-align: center;
+        margin-top: 0px; /* Ajuste del margen superior para centrar */
+    }
+
+    .features-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly; /* Cambiado a space-evenlypara un espaciado uniforme */
+    }
+
+    .features section {
+        background-color: #231c2c;
+        color: white;
+        width: 45%; /* Ajuste del ancho al 45% */
+        max-width: 650px; /* Ancho máximo para evitar que las cajas se vuelvan muy anchas en pantallas grandes */
+        padding: 30px; /* Reducido el relleno */
+        border: 2px solid white; /* Contorno blanco */
+        border-radius: 20px; /* Reducido el radio de borde */
+        box-sizing: border-box;
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0px 0px 8px 0px rgba(255, 251, 251, 1.1); /* Sombreado suave al borde */
+        margin-bottom: 20px; /* Espaciado entre las cajas */
+    }
+
+    .features section:hover {
+        transform: scale(1.05);
+    }
+
+    .features section h3 {
+        margin-top: 20px;
+        color:  #abefea;
+    }
+
+    /*pinche seccion media hora buscandote*/
+    .box.special2 {
+        position: relative;
+        padding: 20px;
+        background-color:  #231c2c;
+        transition: transform 0.3s ease-in-out;
+    }
+
+ /* Estilos para las cajitas 2 */
+.row {
+    justify-content: space-evenly;
+    background-color: #231c2c; /* Color de fondo */
+    padding: 20px; /* Ajusta el relleno según tu preferencia */
+}
+
+.col-6 { 
+    width: 38%;
+}
+
+.feature-box2 {
+    background-color: #262624;
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 0px 18px 0px rgba(97, 85, 200, 0.6); /* Sombreado suave al borde */
+    border-radius: 20px;
+    
+}
+
+.feature-box2:hover {
+    transform: scale(1.05);
+}
+
+.feature-box2 h3 {
+    margin-top: 20px;
+    color: white; /* Color del texto */
+}
+
+.feature-box2 p {
+    color: white; /* Color del texto */
+}
+
+.feature-box2 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los botones en las cajitas 2 */
+.feature-box2 .actions.special {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-box2 .actions.special a.button {
+    color: white; /* Color del texto del botón */
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid white; /* Contorno blanco */
+    border-radius: 5px; /* Bordes redondos */
+    padding: 10px 20px; 
+}
+
+.feature-box2 .actions.special a.button:hover {
+    background-color: white; /* Cambia el fondo a blanco al pasar el mouse */
+    color: #231c2c; /* Cambia el color del texto al pasar el mouse */
+
+}
+
+#cta {
+    background: #231c2c; 
+    padding: 50px;
+    text-align: center;
+    color: white;
+    position: relative;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.cta-box {
+    /* Nuevos estilos para la caja */
+    border: 2px solid #00CED1; /* Borde azul turquesa */
+    box-shadow: 0px 0px 10px 0px #00CED1; /* Sombreado suave */
+    border-radius: 10px; /* Bordes redondos */
+}
+
+#cta form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.email-p {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(70% - 5px); 
+    margin-right: 5px; 
+}
+
+.button-p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0; 
+}
+
+.button-p {
+    flex: 0;
+    margin-left: 5px; 
+}
+
+#cta input[type="email"] {
+    width: 100%; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#cta input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+
+    /* Estilos para el footer */
+    #footer {
+        background: linear-gradient(to bottom, #231c2c, #000000); 
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #footer ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer ul li {
+        margin: 0 10px;
+    }
+
+    #footer ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Media Queries para Responsividad */
+    @media screen and (max-width: 768px) {
+        #banner {
+            height: auto;
+        }
+
+        .features-row section {
+            width: 190%;
+        }
+    }

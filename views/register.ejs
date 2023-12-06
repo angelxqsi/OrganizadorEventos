@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/styleRegis.css">
+
+    <title>register</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Mi Sitio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventos">Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="invitacion">Invitation</a>
+                    </li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Recursos
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="review">Review</a></li>
+                            <li><a class="dropdown-item" href="soporte">Technical Support</a></li>
+                            <li><a class="dropdown-item" href="patrocinios">sponsors and collaborators</a></li>
+                            <li><a class="dropdown-item" href="eventosRecientes">recent events</a></li>
+                        </ul>
+                    </div>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="login">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center mb-4">Registro</h1>
+                <form action="/register" method="POST">
+                    <div class="mb-3">
+                        <label for="inputNombre" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="inputNombre" placeholder="Nombre Completo" name="full_name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inputUsuario" class="form-label">Usuario</label>
+                        <input type="text" class="form-control" id="inputUsuario" placeholder="Usuario" name="user">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inputEdad" class="form-label">Edad</label>
+                        <select class="form-select" id="inputEdad" name="edad">
+                            <option selected disabled>Selecciona tu edad</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="usuario@ejemplo.com" name="correo">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inputCiudad" class="form-label">Ciudad</label>
+                        <select class="form-select" id="inputCiudad" name="ciudad">
+                            <option selected disabled>Selecciona tu ciudad</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inputPassword" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña" name="pass">
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; Derechos reservados.</li><li> <a href=""></a></li>
+        </ul>
+    </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    
+    <% if(typeof alert != "undefined") { %>
+        <script>
+            Swal.fire({
+                title: '<%= alertTitle %>',
+                text: '<%= alertMessage %>',
+                icon:'<%= alertIcon %>',
+                showConfirmButton:<%= showConfirmButton %> ,
+                timer:<%= timer %>
+            }).then(()=>{
+                window.location='/ <%= ruta %>'
+            })
+        </script>
+        <% } %>
+    <script src="resources/js/edad.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+

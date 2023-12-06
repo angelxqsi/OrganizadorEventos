@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Mi Sitio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventos">Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="invitacion">Invitation</a>
+                    </li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources   
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="review">Review</a></li>
+                            <li><a class="dropdown-item" href="soporte">Technical Support</a></li>
+                            <li><a class="dropdown-item" href="patrocinios">Sponsors and Collaborators</a></li>
+                            <li><a class="dropdown-item" href="eventosRecientes">Recent Events</a></li>
+                        </ul>
+                    </div>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="login">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="events">
+            <div class="container">
+                <h2 class="text-center">Eventos</h2>
+                <p class="text-center">Explore our selection of available event rooms:</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="salon text-center">
+                            <div id="carouselSalon1" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="resources/img/salon.jpeg" class="d-block w-100" alt="Salón 1 - Imagen 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="resources/img/salon1-1.png" class="d-block w-100" alt="Salón 1 - Imagen 2">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselSalon1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselSalon1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <p>Salón 1</p>
+                            <button class="reservar-btn btn btn-primary">Reservar</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="salon text-center">
+                            <div id="carouselSalon2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="resources/img/salon2.jpeg" class="d-block w-100" alt="Salón 2 - Imagen 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="resources/img/salon2-1.jpg" class="d-block w-100" alt="Salón 2 - Imagen 2">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselSalon2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselSalon2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <p>Salón 2</p>
+                            <button class="reservar-btn btn btn-primary">Reservar</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="salon text-center">
+                            <div id="carouselSalon3" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="resources/img/salon4.jpeg" class="d-block w-100" alt="Salón 3 - Imagen 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="resources/img/salon3-1.jpeg" class="d-block w-100" alt="Salón 3 - Imagen 2">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselSalon3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselSalon3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <p>Salón 3</p>
+                            <button class="reservar-btn btn btn-primary">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=""></script>
+</body>
+</html>

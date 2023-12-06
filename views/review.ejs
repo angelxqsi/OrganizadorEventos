@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/styleR.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-very-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img src="resources/img/logo2.jpg" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventos">Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="invitacion">Invitation</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="review">Review</a></li>
+                            <li><a class="dropdown-item" href="soporte">Technical Support</a></li>
+                            <li><a class="dropdown-item" href="patrocinios">Sponsors and Collaborators</a></li>
+                            <li><a class="dropdown-item" href="eventosRecientes">Recent Events</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="page-wrapper">
+        <header>
+            <h1>User Reviews</h1>
+        </header>
+    
+        <main>
+            <section class="reviews" id="reviews">
+                <article class="review">
+                    <div class="user-info">
+                        <img src="https://c1.klipartz.com/pngpicture/823/765/sticker-png-login-icon-system-administrator-user-user-profile-icon-design-avatar-face-head.png" alt="Usuario 1">
+                        <h3>Nombre Usuario 1</h3>
+                    </div>
+                    <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
+                </article>
+
+                <article class="review">
+                    <div class="user-info">
+                        <img src="https://c1.klipartz.com/pngpicture/823/765/sticker-png-login-icon-system-administrator-user-user-profile-icon-design-avatar-face-head.png" alt="Usuario 2">
+                        <h3>Nombre Usuario 2</h3>
+                    </div>
+                    <p class="review-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo unde eum sint natus eius explicabo similique autem corrupti labore at, aspernatur, sit animi non odio! Nam quis tenetur minus porro?.</p>
+                </article>
+
+                <article class="review">
+                    <div class="user-info">
+                        <img src="https://c1.klipartz.com/pngpicture/823/765/sticker-png-login-icon-system-administrator-user-user-profile-icon-design-avatar-face-head.png" alt="Usuario 3">
+                        <h3>Nombre Usuario 3</h3>
+                    </div>
+                    <p class="review-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis sit sed reprehenderit in corporis quis cupiditate voluptatem placeat est! Nam ipsam reprehenderit illo perferendis voluptate illum, doloribus facere in aut.</p>
+                </article>
+                <!-- Puedes seguir agregando más reseñas aquí -->
+            </section>
+
+            <form id="reviewForm">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" required>
+                <label for="userReview">Tu reseña:</label>
+                <textarea id="userReview" rows="4" required></textarea>
+                <button type="submit">Enviar Reseña</button>
+            </form>
+        </main>
+    
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Derechos reservados.</li>
+                <li><a href=""></a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="resources/js/reseñas.js"></script>
+</body>
+</html>

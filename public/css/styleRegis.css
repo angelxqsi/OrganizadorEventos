@@ -1,0 +1,53 @@
+/* Estilos para el contenedor del botón de registro */
+.d-grid {
+    margin-bottom: 20px; /* Agrega un margen inferior al contenedor del botón */
+}
+
+/* Estilos para el footer */
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    /* Elimina position: absolute; bottom: 0; para permitir que el footer siga al contenido */
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura de la ventana */
+}
+
+.container {
+    flex: 1; /* Permite que el contenido se expanda verticalmente */
+}
+
+#footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Asegura que los elementos de la lista se expandan */
+}
+
+#footer ul li {
+    margin: 0 10px;
+}
+
+#footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media Queries para Responsividad */
+@media screen and (max-width: 768px) {
+    #banner {
+        height: auto;
+    }
+
+    .features-row section {
+        width: 100%;
+    }
+}
